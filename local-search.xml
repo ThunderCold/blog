@@ -3,5 +3,30 @@
   
   
   
+  <entry>
+    <title>test post</title>
+    <link href="/2022/11/22/test%20post/"/>
+    <url>/2022/11/22/test%20post/</url>
+    
+    <content type="html"><![CDATA[<p>這是一篇測試用文章。</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">123456<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>test_category</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>test_tag1, test_tag2</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
   
 </search>
