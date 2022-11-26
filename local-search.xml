@@ -4,9 +4,34 @@
   
   
   <entry>
+    <title>test post 2</title>
+    <link href="/2022/11/test2/"/>
+    <url>/2022/11/test2/</url>
+    
+    <content type="html"><![CDATA[<p>這是第二篇操是文章。</p><p>今天天氣還不錯。</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">int</span> a = <span class="hljs-number">5</span><br><span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>, a);<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>test_category</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>test_tag</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>test post</title>
-    <link href="/2022/11/22/test%20post/"/>
-    <url>/2022/11/22/test%20post/</url>
+    <link href="/2022/11/test%20post/"/>
+    <url>/2022/11/test%20post/</url>
     
     <content type="html"><![CDATA[<p>這是一篇測試用文章。</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">123456<br></code></pre></td></tr></table></figure><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs stylus"><span class="hljs-selector-tag">a</span> = <span class="hljs-number">5</span><br><span class="hljs-keyword">for</span> <span class="hljs-selector-tag">i</span> <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(a):<br>    <span class="hljs-built_in">print</span>(i)<br></code></pre></td></tr></table></figure><p>$<br>1+1&#x3D;2 \<br>\cfrac{1}{2} \div<br>$</p><p>$456+789&#x3D;123$</p>]]></content>
     
