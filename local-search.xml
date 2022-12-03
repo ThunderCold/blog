@@ -3,5 +3,32 @@
   
   
   
+  <entry>
+    <title>測試文章</title>
+    <link href="/2022/12/test/"/>
+    <url>/2022/12/test/</url>
+    
+    <content type="html"><![CDATA[<p>測試<br>測試<br>123</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>test_category</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>tag1</tag>
+      
+      <tag>tag2</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
   
 </search>
