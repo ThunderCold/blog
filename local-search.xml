@@ -117,11 +117,11 @@
   
   
   <entry>
-    <title>About Me</title>
+    <title>About</title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<h3 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h3><ul><li><a href="https://zh-tw.facebook.com/FDHSCoder/">復旦程式設計班</a> 副班長</li><li>國立成功大學 資訊工程學系</li></ul><h3 id="Interest"><a href="#Interest" class="headerlink" title="Interest"></a>Interest</h3><ul><li>懸疑推理小說</li><li>犯罪片、動作片</li><li>流行、嘻哈、電音</li><li>除了籃球的球類運動</li></ul><br><div align=center><a href="https://www.facebook.com/profile.php?id=100000325496931"><img width = '35' height ='35' src ="/image/about/facebook.png"></img></a>&nbsp&nbsp&nbsp<a href="https://www.instagram.com/lelwen_tseng"><img width = '35' height ='35' src ="/image/about/instagram.png"></img></a>&nbsp&nbsp&nbsp<a href="https://github.com/ThunderCold"><img width = '35' height ='35' src ="/image/about/github.png"></img></a></div>]]></content>
+    <content type="html"><![CDATA[<h3 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h3><ul><li><a href="https://zh-tw.facebook.com/FDHSCoder/">復旦程式設計班</a> 副班長</li><li>國立成功大學 資訊工程學系</li></ul><h3 id="Interest"><a href="#Interest" class="headerlink" title="Interest"></a>Interest</h3><ul><li>懸疑推理小說</li><li>犯罪片、動作片</li><li>流行、嘻哈、電音</li><li>除了籃球的球類運動</li></ul>]]></content>
     
   </entry>
   

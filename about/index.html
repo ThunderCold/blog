@@ -12,6 +12,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
   <meta name="theme-color" content="#2f4154">
   <meta name="author" content="Henry Tseng">
   <meta name="keywords" content="code,blog,computer,technology,programming">
@@ -20,11 +22,17 @@
   
   
   
-  <title>About Me - Colder Journal</title>
+  <title>About - Colder Journal</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
 
@@ -206,7 +214,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">About Me</span>
+            <span id="subtitle">About</span>
           
         </div>
 
@@ -228,13 +236,64 @@
         <div id="board"
           >
           
+            <div class="about-avatar">
+              <img src="/img/avatar.jpg" srcset="/img/loading.gif" lazyload class="img-fluid" alt="avatar">
+            </div>
+          
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
-<article class="page-content">
-  <h3 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h3><ul>
+<div class="text-center">
+  <div class="about-info">
+    <div class="about-name">ThunderCold</div>
+    <div class="about-intro">Keep the faith.</div>
+    <div class="about-icons">
+      
+        
+        
+        
+        <a href=https://www.facebook.com/profile.php?id=100000325496931 class="
+           hint--bottom hint--rounded"
+           aria-label=Facebook
+           target="_blank"
+        >
+          <i class="iconfont icon-facebook-fill" aria-hidden="true"></i>
+          
+        </a>
+      
+        
+        
+        
+        <a href=https://www.instagram.com/lelwen_tseng class="
+           hint--bottom hint--rounded"
+           aria-label=Instagram
+           target="_blank"
+        >
+          <i class="iconfont icon-instagram-fill" aria-hidden="true"></i>
+          
+        </a>
+      
+        
+        
+        
+        <a href=https://github.com/ThunderCold class="
+           hint--bottom hint--rounded"
+           aria-label=GitHub
+           target="_blank"
+        >
+          <i class="iconfont icon-github-fill" aria-hidden="true"></i>
+          
+        </a>
+      
+    </div>
+  </div>
+</div>
+
+<article class="about-content page-content mt-5">
+  <div class="markdown-body">
+    <h3 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h3><ul>
 <li><a target="_blank" rel="noopener" href="https://zh-tw.facebook.com/FDHSCoder/">復旦程式設計班</a> 副班長</li>
 <li>國立成功大學 資訊工程學系</li>
 </ul>
@@ -244,12 +303,35 @@
 <li>流行、嘻哈、電音</li>
 <li>除了籃球的球類運動</li>
 </ul>
-<br>
-<div align=center><a target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=100000325496931"><img width = '35' height ='35' src ="/image/about/facebook.png"></img></a>&nbsp&nbsp&nbsp<a target="_blank" rel="noopener" href="https://www.instagram.com/lelwen_tseng"><img width = '35' height ='35' src ="/image/about/instagram.png"></img></a>&nbsp&nbsp&nbsp<a target="_blank" rel="noopener" href="https://github.com/ThunderCold"><img width = '35' height ='35' src ="/image/about/github.png"></img></a></div>
+
+  </div>
+
+  
+</article>
+
+
+
+
 
   
 
-</article>
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
 
 
 
@@ -336,6 +418,59 @@
 
 
 
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
 
