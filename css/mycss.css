@@ -1,0 +1,35 @@
+#chat2 {
+    background-color: transparent;
+}
+
+#chat2 .card-body {
+    background-color: transparent;
+}
+
+#chat2 .form-control {
+    border-color: transparent;
+}
+
+#chat2 .form-control:focus {
+    border-color: transparent;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+#chat2 {
+    border: 1px solid white;
+    /* 設定白色外框 */
+    padding: 10px;
+    /* 根據需要調整內邊距 */
+    border-radius: 5px;
+    /* 根據需要調整圓角 */
+    background-color: transparent;
+    /* 確保背景透明 */
+}
