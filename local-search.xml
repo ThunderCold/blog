@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>大三上修課心得</title>
+    <link href="/2025/113-1-course/"/>
+    <url>/2025/113-1-course/</url>
+    
+    <content type="html"><![CDATA[<h2 id="微算機原理與應用（含實驗）"><a href="#微算機原理與應用（含實驗）" class="headerlink" title="微算機原理與應用（含實驗）"></a>微算機原理與應用（含實驗）</h2><ul><li><p><strong>類型：</strong><br>系訂必修</p></li><li><p><strong>學分數：</strong><br>4 學分</p></li><li><p><strong>修課心得：</strong><br>修的相當痛苦，前半段單純只有程式的時候感覺還行，反正就照平常寫程式的邏輯去想，語法也沒有很難，期中上機考也考得不錯，筆試則是慘不忍睹，幾百頁簡報根本看不懂，到了後面直接放棄開背考古。不過，到了後半段才是真正災難的開始，接了 PIC18 後多了一堆硬體的東西，接線不會接、語法看不懂，我到現在還是不知道那些跟硬體有關的程式到底是什麼意思。雖然有給模板，但每個星期的 lab 坐在電腦前想了半天還是不會寫，只好去跟別人求救偷程式碼，期末上機考前慌得一匹，幸好最後硬體都很乖沒有搞事。期末筆試就沒這麼幸運，一樣是幾百頁的簡報，一樣是完全看不懂，一樣是放棄直接背考古，結果就是兩個筆試加起來比 100 分多一點。期末專題也很慘，因為硬體什麼都搞不懂，基本上就是在躺分，第一次覺得自己就是個廢物。<br><br>雖然整堂課都不知道在幹嘛，但因為配分真的滿甜的，所以最後大家的成績都滿好看的。除了有一個特別規定，兩次上機考加起來不到 80 分的要直接當掉，所以那時候期中上機考完之後，很多人都很慌，也有人去跟助教和教授抗議，不過因為期末上機考平均很高，所以沒什麼人真的被當掉。對這個規則我沒什麼想法，教授說是因為怕有人 lab 都抄別人的，所以才訂下這個規則，聽起來很合理，雖然好像哪裡怪怪的，但不關我的事，反正我過了，希望以後不會再碰到 PIC18 了。</p></li></ul><p><img src="/image/2025/nostudy.png"></p><ul><li><strong>成績分佈：</strong><br><img src="/image/2024/F7325002.png"></li></ul><h2 id="作業系統"><a href="#作業系統" class="headerlink" title="作業系統"></a>作業系統</h2><ul><li><p><strong>類型：</strong><br>系訂必修</p></li><li><p><strong>學分數：</strong><br>3 學分</p></li><li><p><strong>修課心得：</strong><br>一門也是讓我很頭痛的課，但沒有像微算機這麼崩潰，尤其是因為期中考考太爛，所以期末更認真念的時候，發現其實這東西有點有趣，可能是因為有些知識是以前有聽過或接觸過的，現在再來看一次就會有一種莫名的熟悉感。最後期末考的還不錯（至少跟期中考比的話），有壓線 A+，讚，要求不要太高。</p></li><li><p><strong>成績分佈：</strong><br><img src="/image/2024/F720800.png"></p></li></ul><h2 id="計算理論"><a href="#計算理論" class="headerlink" title="計算理論"></a>計算理論</h2><ul><li><p><strong>類型：</strong><br>系訂選修</p></li><li><p><strong>學分數：</strong><br>3 學分</p></li><li><p><strong>修課心得：</strong><br>說實在我真的覺得這堂課很好玩，雖然不排除是因為分數很高的關係，但課程裡面教的那些邏輯真的很有趣，前期第一次看的時候可能會不知道它到底在幹嘛，但是理解之後，就會發現這些題目基本上就是腦筋急轉彎，解出來的瞬間會有一種成就感。</p></li><li><p><strong>成績分佈：</strong><br><img src="/image/2024/F732001.png"></p></li></ul><h2 id="多處理機平行程式設計"><a href="#多處理機平行程式設計" class="headerlink" title="多處理機平行程式設計"></a>多處理機平行程式設計</h2><ul><li><p><strong>類型：</strong><br>系訂選修</p></li><li><p><strong>學分數：</strong><br>3 學分</p></li><li><p><strong>修課心得：</strong><br>去年從 120 人退到剩 30 幾人的課，但我還是修了，主要是我覺得這三年都沒上什麼真正在學程式設計的課，而且這堂課是用 C 或 C++ 的，剛好符合我的胃口，所以期初的時候就決定打死不退了。<br><br>說實話，課程裡面教的東西本身沒有很難，但是寫作業的時候還是得想一下，想不出來的話挺痛苦的，不過現在 AI 發展太進步了，基本上拿給 AI 修程式碼都還是能過。還有很重要一點，這堂根本就是考古課，在不耍廢而且有考古的前提下，感覺保底有 95 分。但修完之後也發現，好像有點太依賴考古了，沒有完全達成當初想修的目的，也不能說完全沒學到東西，只是確實在還有很多事情要做的情況下，人的本性就是會想偷懶。</p></li><li><p><strong>成績分佈：</strong><br><img src="/image/2024/F722500.png"></p></li></ul><h2 id="影像處理、電腦視覺及深度學習概論"><a href="#影像處理、電腦視覺及深度學習概論" class="headerlink" title="影像處理、電腦視覺及深度學習概論"></a>影像處理、電腦視覺及深度學習概論</h2><ul><li><p><strong>類型：</strong><br>系訂選修</p></li><li><p><strong>學分數：</strong><br>3 學分</p></li><li><p><strong>修課心得：</strong><br>這堂是大四的選修課，但最後被我退掉了，主要是這學期真的選太多課了，而且上課我也是幾乎都聽不懂，我高中的時候本來就很討厭 AI，期中考前也是讀的很痛苦，簡報看了半天有看沒有懂，而且老師簡報做的真的好醜，上課也喜歡跳來跳去的，前期上課原本還有嘗試過專心聽然後做筆記，到後面就放棄了，最後期中考考爛就退掉了。</p></li><li><p><strong>成績分佈：</strong><br><img src="/image/2024/F743000.png"></p></li></ul><h2 id="資訊專題（一）"><a href="#資訊專題（一）" class="headerlink" title="資訊專題（一）"></a>資訊專題（一）</h2><ul><li><p><strong>類型：</strong><br>系訂必修</p></li><li><p><strong>學分數：</strong><br>2 學分</p></li><li><p><strong>修課心得：</strong><br>還記得去年找到教授的時候，內心還是很澎湃，覺得自己未來一年一定要做點像樣的東西出來。結果這學期每個星期，都是 meeting 前趕快生點東西出來報，甚至還有幾個星期都在原地打轉，光是弄懂那個模型就花了一堆時間，到現在好像也沒有之前那種熱情了。<br><br>我學期中後段有反省過自己很多次，為什麼現在自己會變成這樣，原本有點興趣的東西變得沒有熱情，只想交差了事。想了半天也沒什麼結論，可能我不夠專注吧，如果我能靜下來專心把眼前的任務做好，會不會好很多呢？</p></li><li><p><strong>成績分佈：</strong><br><img src="/image/2024/F730210.png"></p></li></ul><h2 id="漫遊藝術"><a href="#漫遊藝術" class="headerlink" title="漫遊藝術"></a>漫遊藝術</h2><ul><li><p><strong>類型：</strong><br>通識</p></li><li><p><strong>學分數：</strong><br>2 學分</p></li><li><p><strong>修課心得：</strong><br>待補</p></li><li><p><strong>成績分佈：</strong><br><img src="/image/2024/A92U500.png"></p></li></ul><h2 id="Coursera-課程"><a href="#Coursera-課程" class="headerlink" title="Coursera 課程"></a>Coursera 課程</h2><p>可能是因為上學期太多人抗議了，這學期學校好像有強制規定，Coursera 線上成績佔比最多就是 80%。但這其實還是很高，你要從哪裡找保底先送你 80 分的課，對吧？話是這樣說啦，但這學期我也有一堂線上成績的部分被扣了總成績 3 分，因為我拖到期末才把最後一個測驗寫完，結果 Coursera 系統壞了，我進不去那個測驗。那時候寄信給 Coursera、雙語中心、開課老師，結果最後的結論就是我的分數還是被扣了，雖然我不懂為什麼系統錯誤是我的分數要負責，但我也有點懶得因為一學分之中的 3 分去大費周章吵架了。老師的回信是說「93 分跟 96 分沒有差別，都是非常優秀呦。」…？真會安慰人<br><br>兩個學期的 Coursera 也刷完了，首先要先感謝 Coursera 這個平台，讓我在高中的時候可以刷證書放進學習歷程，大學的時候可以刷分數刷學分放進成績單，雖然說很明顯是踩著某些沒有 Coursera 帳號的同學屍體爬上去的。下學期聽說要改的更嚴格了，似乎還要加入實體課？這制度也是被玩壞了，不過身為既得利益者，我沒什麼太多意見，刷完分高歌離席。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Learning</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>NCKU</tag>
+      
+      <tag>Course</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>大二下回顧</title>
     <link href="/2024/112-2-review/"/>
     <url>/2024/112-2-review/</url>
@@ -333,7 +360,7 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<h2 id="Education"><a href="#Education" class="headerlink" title="Education"></a>Education</h2><ul><li>[2022&#x2F;09 ~ ] 國立成功大學 資訊工程學系</li></ul><h2 id="Experience"><a href="#Experience" class="headerlink" title="Experience"></a>Experience</h2><ul><li>[2020&#x2F;09 ~ 2021&#x2F;06] 復旦程式設計班 副班長</li><li>[2024&#x2F;07 ~ 2024&#x2F;08] 中央研究院資訊科學研究所 暑期實習</li></ul><h2 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h2><ul><li>[2023&#x2F;12 ~ 2024&#x2F;01] <a href="https://project.thundercold.dev/Expense-Tracking-Penguin/">Unity 3D - 記帳企鵝</a> (Group Project)</li><li>[2024&#x2F;07 ~ 2024&#x2F;08] <a href="https://intern2024.thundercold.dev/">中央研究院資訊科學研究所 暑期實習報告</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="Education"><a href="#Education" class="headerlink" title="Education"></a>Education</h2><ul><li>[Sep 2022 ~ ] 國立成功大學 資訊工程學系</li></ul><h2 id="Experience"><a href="#Experience" class="headerlink" title="Experience"></a>Experience</h2><ul><li>[Sep 2020 ~ Jun 2021] 復旦程式設計班 副班長</li><li>[Jul 2024 ~ Aug 2024] 中央研究院資訊科學研究所 暑期實習生</li><li>[Oct 2024 ~ Dec 2024] 中央研究院資訊科技創新研究中心 大專研究生</li></ul><h2 id="Achievement"><a href="#Achievement" class="headerlink" title="Achievement"></a>Achievement</h2><ul><li>[Oct 2024] 2024 梅竹黑客松 黑客組 恩智浦半導體 第一名</li></ul><h2 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h2><ul><li>[Dec 2023 ~ Jan 2024] <a href="https://project.thundercold.dev/Expense-Tracking-Penguin/">Unity 3D - 記帳企鵝</a> (Group Project)</li><li>[Jul 2024 ~ Aug 2024] <a href="https://intern2024.thundercold.dev/">中央研究院資訊科學研究所 暑期實習報告</a></li><li>[Oct 2024] <a href="https://github.com/ThunderCold/NXP_hackathon">梅竹黑客松 - 智耕未來</a> (Group Project)</li></ul>]]></content>
     
   </entry>
   
