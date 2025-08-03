@@ -1,0 +1,691 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/icon_coding.png">
+  <link rel="icon" href="/img/icon_coding.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Henry Tseng">
+  <meta name="keywords" content="code,blog,computer,technology,programming,life">
+  
+  
+    <meta name="description" content="編譯系統 類型：系訂必修  學分數：3 學分  修課心得：  這堂課前面教的東西跟之前計算理論很像，所以前面其實過的滿輕鬆的，只是到了中間章節之後，開始進入一個我有點不知所措的領域，期中的範圍讀了之後沒有到很難，還算可以應付，期末範圍開始就有點崩了。作業的部分，作業一難度還好，但作業二和三，我不知道學長姊那屆是怎麼在沒有 AI 的情況下寫出來的，寫到最後已經變成完完全全的 Prompt Codin">
+  
+  
+  
+  <title>大三下修課心得 - Colder Journal</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"blog.thundercold.dev","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":65,"cursorChar":"_","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":false,"baidu":null,"google":null,"gtag":"G-ST3J3WTS6W","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript('https://www.googletagmanager.com/gtag/js?id=G-ST3J3WTS6W', function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-ST3J3WTS6W');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Colder Journal</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Home
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categories
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archives
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                Tags
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                About
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/yuguang.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle">大三下修課心得</span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-08-03 15:23" pubdate>
+          August 3, 2025
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">大三下修課心得</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="編譯系統"><a href="#編譯系統" class="headerlink" title="編譯系統"></a>編譯系統</h2><ul>
+<li><p><strong>類型：</strong><br>系訂必修</p>
+</li>
+<li><p><strong>學分數：</strong><br>3 學分</p>
+</li>
+<li><p><strong>修課心得：</strong><br>  這堂課前面教的東西跟之前計算理論很像，所以前面其實過的滿輕鬆的，只是到了中間章節之後，開始進入一個我有點不知所措的領域，期中的範圍讀了之後沒有到很難，還算可以應付，期末範圍開始就有點崩了。作業的部分，作業一難度還好，但作業二和三，我不知道學長姊那屆是怎麼在沒有 AI 的情況下寫出來的，寫到最後已經變成完完全全的 Prompt Coding 了，特別感謝 Gemini 2.5 Pro、GPT-o3、GPT-4.1 的協助。</p>
+<p>  比較特別的是期末考，因為這堂課有點名小考送分環節，作業總分也超過 100，所以很多人在期末考前分數就已經爆高了，有風聲傳聞說期末考會出很難，結果最後還真的很難，原因是有人在導聚的時候跟導師說編譯系統分數超高，然後那個導師就跑去跟任課老師告狀，最後期末考就變超難。導聚吃飯請乖乖吃飯，沒事講一些有的沒的，雖然我期末真的考很爛，但學期分數還是很高，有預感下屆 116 又要遭殃了。</p>
+</li>
+<li><p><strong>成績分佈：</strong><br><img src="/image/2025/F732400.png" srcset="/img/loading.gif" lazyload></p>
+</li>
+</ul>
+<h2 id="訊號與系統"><a href="#訊號與系統" class="headerlink" title="訊號與系統"></a>訊號與系統</h2><ul>
+<li><p><strong>類型：</strong><br>系訂選修</p>
+</li>
+<li><p><strong>學分數：</strong><br>3 學分</p>
+</li>
+<li><p><strong>修課心得：</strong><br>  感覺這堂課應該要有一些工程數學的基礎會上的比較輕鬆，加上我對數學本來就是一竅不通，所以其實這堂上的滿痛苦的，老師上課也都聽不懂，所以其實期中前就開始翹課了，期中考考得很簡單，雖然有大部分都是考古，但一題簡報上的題目我還是不會，所以其實期中其實也沒考很好。讀期末的時候，發現讀簡報還是看不下去，所以又跑回去看作業和考古，期末我也忘記是哪裡寫錯了，反正也是考的頗差，最後勉強吊車尾 A+。比較特別的是，最後一份作業是要寫 Matlab 程式分析訊號，一開始也是丟給 GPT 亂做，之後室友發現老師上課的時候有講解，半夜趕緊修修補補，最後還被選上台報告，雖然助教原本說上台報告的有加分，但我左看看右看看還是不知道分數加去哪了。</p>
+</li>
+<li><p><strong>成績分佈：</strong><br><img src="/image/2025/F730300.png" srcset="/img/loading.gif" lazyload></p>
+</li>
+</ul>
+<h2 id="資訊專題（二）"><a href="#資訊專題（二）" class="headerlink" title="資訊專題（二）"></a>資訊專題（二）</h2><ul>
+<li><p><strong>類型：</strong><br>系訂必修</p>
+</li>
+<li><p><strong>學分數：</strong><br>2 學分</p>
+</li>
+<li><p><strong>修課心得：</strong><br>  延續上學期的專題進度，其實一開始是感覺有點心累的，不知道是我們的做法有問題還是其他問題，我們得到的結果都很差，開始害怕會不會最後根本生不出成果。原本是用 LLaMA Vision 去跑，繳交專題簡介截止日的前幾天，老師看我們成果好像有點慘，問我們要不要用 YOLO 試試看，結果一跑發現 YOLO 出的成果好多了，花將近一年搞 LLaMA Vision 打不贏只花一天的 YOLO，整個被當小丑。最後我們把兩個成果統整之後交出去，但其實一開始我也沒有太大期望，沒想到專題展當天初選還能晉級，真的是非常神奇，進到下午決賽之後拿了佳作，完全沒想到會是這種走向。之後我們把 YOLO 那部分的內容拿去投研討會，雖然說不確定是不是自嗨研討會，但又拿了一個獎還是很開心。</p>
+</li>
+<li><p><strong>成績分佈：</strong><br><img src="/image/2025/F730220.png" srcset="/img/loading.gif" lazyload></p>
+</li>
+</ul>
+<h2 id="史丹福微課程—對你來說，什麼是重要的？"><a href="#史丹福微課程—對你來說，什麼是重要的？" class="headerlink" title="史丹福微課程—對你來說，什麼是重要的？"></a>史丹福微課程—對你來說，什麼是重要的？</h2><ul>
+<li><p><strong>類型：</strong><br>系外選修</p>
+</li>
+<li><p><strong>學分數：</strong><br>1 學分</p>
+</li>
+<li><p><strong>修課心得：</strong><br>  上完這堂課的心得就是，這堂應該列為成大必修。課程內容很有意義，而且跟同組組員討論的過程也很有趣，當然最後分數也不錯。還記得之前就有看到這門課，因為撞課的關係一直沒有修，這學期開學前終於填了報名表，原本填了兩堂，但只有錄取這堂，聽說每一堂的錄取率都不到 50%。原本就知道這堂課需要一直跟別人交流討論，所以一開始超怕社恐屬性又發作，會不會六週的時間都很不自在。但從第一週開始似乎就和同組的同學相處得不錯，第二週開始感覺融入大家都很順利，這其實是我沒有想到的，為什麼我能和幾個只認識幾天的同學聊得這麼開心？</p>
+<p>  每堂課的前半段是老師上課的時間，講完之後就會是小組討論環節，會有一些課堂活動或是討論的主題，雖然是這樣說，但到後面變更熟一點之後，其實我們這一組都在閒聊。三小時的課結束之後，老師會強烈建議大家再多留下來和組員們繼續聊 45 分鐘，原本對我這種社恐仔應該是很可怕的，但不知道為什麼，我每週都很享受這可以跟組員聊天交流的時間。讓我印象最深刻的是，有一週在討論自己的動力來源，用「焦慮」、「歸屬」、「渴望」組成 100%，我寫我的動力來源是 99% 的焦慮 + 1% 的渴望，我覺得這很符合我目前的狀態，但同組組員看到可能覺得太奇葩了，很擔心(?)的關心我，直接舉手跟老師講如果有人 99% 焦慮該怎麼辦。當下可能覺得有些搞笑，但聽了老師的講解和自己仔細想想，這確實是我該改變的地方。最後一週是成果報告，每個人會在所有人面前報告三分鐘，內容就是回歸這堂課的名字，跟大家分享「什麼對我最重要」。</p>
+<p>  這六週的密集課程我覺得很特別，上一次修到這類型的課應該是大二上的思辨與表達，但這堂課又更有深度，在我現在對人生極度迷茫的狀態下，不能說這堂課解決了我的困惑，但肯定是對我有幫助的，當然不能排除是同組組員的影響，能和這群人一組我覺得我很幸運，這六週真的過得很開心。</p>
+</li>
+<li><p><strong>成績分佈：</strong><br><img src="/image/2025/N984200.png" srcset="/img/loading.gif" lazyload></p>
+</li>
+</ul>
+<h2 id="全民國防教育軍事訓練－國防科技"><a href="#全民國防教育軍事訓練－國防科技" class="headerlink" title="全民國防教育軍事訓練－國防科技"></a>全民國防教育軍事訓練－國防科技</h2><ul>
+<li><p><strong>類型：</strong><br>軍訓</p>
+</li>
+<li><p><strong>學分數：</strong><br>0 學分</p>
+</li>
+<li><p><strong>修課心得：</strong><br>  第一次修軍訓課，說實話就是真的滿無聊的，只要缺席不到 8 堂課（一次算 2 堂），基本上應該都能過。老師上課的內容基本上都沒在聽，而且老師會要求一些事項(?)，像是不要滑手機、不要穿短褲(?)，雖然是這樣說啦，但其實只要不要太誇張，老師好像也懶得管，可能他放棄我們了吧。期中考是帶考卷回家找答案，期末的部分是分組報告，不知道為什麼老師對我們這組的評價特好，應該是因為有某個組員在扛吧，我明明都是用 GPT 做的啊。因為五月底回家 + 確診的關係，所以請假了兩次，最後分數挺醜的，但應該也不是太重要。</p>
+</li>
+<li><p><strong>成績分佈：</strong><br><img src="/image/2025/A3109001.png" srcset="/img/loading.gif" lazyload></p>
+</li>
+</ul>
+<h2 id="虛擬世界之設計與研究"><a href="#虛擬世界之設計與研究" class="headerlink" title="虛擬世界之設計與研究"></a>虛擬世界之設計與研究</h2><ul>
+<li><p><strong>類型：</strong><br>通識</p>
+</li>
+<li><p><strong>學分數：</strong><br>2 學分</p>
+</li>
+<li><p><strong>修課心得：</strong><br>  如其名，這堂課主要在教一些跟虛擬世界有關的東西，老師上課很認真，採用類似美式的教學風格，會問學生問題，但如果答不出來也不會怎樣，甚至直接跟他說不想答也不會怎樣(?)。感覺老師是有點上課理想的，但台下學生都不怎麼理他，到後面甚至覺得老師有點可憐，所以我還是會盡量盯著他看(?)。老師有一週請假，所以選了一個星期六下午線上補課不點名，聽說上線人數是 0。因為我是課程小幫手(?)，所以老師比較知道我是誰，有時候沒人理他他就會請小幫手回答問題，小幫手總成績可以加 1.5 分。</p>
+<p>  這堂課會不定時點名，但如果請假也不會扣分，作業有兩次個人作業和兩次小組作業，個人作業基本上很簡單，小組作業得花一些時間，幸好我們這組都滿扛的，所以最後總成績很高。滿推薦這堂課的，但希望去修的人可以熱情一點跟老師互動，因為老師真的人很好又非常認真，學期中後半段看到沒人理他真的於心不忍。</p>
+</li>
+<li><p><strong>成績分佈：</strong><br><img src="/image/2025/A94E900.png" srcset="/img/loading.gif" lazyload></p>
+</li>
+</ul>
+<h2 id="三創與設計思維"><a href="#三創與設計思維" class="headerlink" title="三創與設計思維"></a>三創與設計思維</h2><ul>
+<li><p><strong>類型：</strong><br>通識</p>
+</li>
+<li><p><strong>學分數：</strong><br>2 學分</p>
+</li>
+<li><p><strong>修課心得：</strong><br>  一開始選這堂課是聽說又涼又甜，剛好還有餘額就在第二次抽籤選了，事實證明確實如此。每次上課都會有刷卡點名，可以請假兩次，上課主要介紹一些創意、創業相關的概念，也會邀請一些相關人士來演講，雖然理論上我是有點興趣啦，但到後面一樣沒在聽課，可能之前那個什麼創業競賽的感覺又回來了。五次的個人作業就是挑五次上課的內容寫心得，期末會有一份團體報告，期初就會先分好組，分組的方式也挺社恐不友善的，因為規定是不能跟同系的同組，而且還有另個科系分流的規定，所以分組的那堂課就是開始假裝自己是社牛問旁邊的人要不要同一組。</p>
+<p>  這學期的團體報告是要去找一間店，然後觀察分析這間店的場域，並提出自己的看法。我們這組是花了一個下午實際到一間咖啡廳討論，然後順便觀察那間咖啡廳，之後就分配工作把自己的部分丟到群組，再由一個人負責統整。是挺酷的但有種啥這樣就結束的感覺，不過分數一樣很高，所以這堂一樣是好課。</p>
+</li>
+<li><p><strong>成績分佈：</strong><br><img src="/image/2025/A92B800.png" srcset="/img/loading.gif" lazyload></p>
+</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Course-Review/" class="category-chain-item">Course Review</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/NCKU/">#NCKU</a>
+      
+        <a href="/tags/Spring2025/">#Spring2025</a>
+      
+    </div>
+  
+</div>
+
+
+              
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/113-1-review/" title="大三上回顧">
+                        <span class="hidden-mobile">大三上回顧</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  <article id="comments" lazyload>
+    
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'ThunderCold/commit-utterances');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
+    })
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+  </article>
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;Table of Contents</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+      © 2025 Colder Journal | Powered by Hexo Theme Fluid
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
